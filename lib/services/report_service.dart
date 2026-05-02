@@ -34,7 +34,7 @@ class ReportService {
       File pdf, File video, Position location) async {
     final request = http.MultipartRequest(
       "POST",
-      Uri.parse("http://yourserver.com/api/accident/report"),
+      Uri.parse("https://yourappname-production.up.railway.app/api/accident/report"),
     );
 
     request.files.add(await http.MultipartFile.fromPath("pdf", pdf.path));
