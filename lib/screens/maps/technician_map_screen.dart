@@ -45,7 +45,7 @@ class _TechnicianMapScreenState extends State<TechnicianMapScreen> {
   // SOCKET.IO
   void _connectSocket() {
     _socket = IO.io(
-      "http://10.0.2.2:5000",
+      "https://yourappname-production.up.railway.app/",
       IO.OptionBuilder().setTransports(["websocket"]).build(),
     );
 
@@ -109,7 +109,7 @@ class _TechnicianMapScreenState extends State<TechnicianMapScreen> {
 
   // FETCH TECHNICIANS FROM API
   Future<void> _getTechnicians() async {
-    const url = "http://10.0.2.2:5000/api/technicians";
+    const url = "https://yourappname-production.up.railway.app//api/technicians";
 
     try {
       final res = await http.get(Uri.parse(url));
