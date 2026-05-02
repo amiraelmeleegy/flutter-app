@@ -7,7 +7,7 @@ import '../models/car_brand.dart';
 import '../models/car_model_name.dart';
 
 class CarTypesService {
-  static const String base = "http://10.0.2.2:5000/api/car-types";
+  static const String base = "https://yourappname-production.up.railway.app/api/car-types";
 
   // 🟦 1) Get Brands
   static Future<List<CarBrand>> getBrands() async {
