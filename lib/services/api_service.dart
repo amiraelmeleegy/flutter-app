@@ -107,7 +107,7 @@ class ApiService {
 
     if (defaultTargetPlatform == TargetPlatform.android &&
         forceAndroidEmulator) {
-      final finalUrl = "http://10.0.2.2:$defaultPort$apiPrefix";
+      final finalUrl = "https://yourappname-production.up.railway.app/:$defaultPort$apiPrefix";
       if (debugLogs) debugPrint("🤖 ANDROID EMULATOR baseUrl => $finalUrl");
       return finalUrl;
     }
