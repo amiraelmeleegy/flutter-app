@@ -49,4 +49,8 @@ flutter {
     source = "../.."
 }
 
+<<<<<<< HEAD
 android.defaultConfig.manifestPlaceholders["MAPS_API_KEY"] = mapsApiKey
+=======
+android.defaultConfig.manifestPlaceholders["MAPS_API_KEY"] = mapsApiKey
+>>>>>>> fe7fc7f80e0efe905b0d33e640fb566485c27aac
